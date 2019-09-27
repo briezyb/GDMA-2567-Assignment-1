@@ -36,9 +36,184 @@
         - Size
 
 --------------------------------------------------------------*/
+*{
+	font-family: 'Open Sans', sans-serif;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 
 /*--------------------------------------------------------------
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
+/* -- LISTS -- */ 
 
-/* -- FORMS -- */ 
+nav li{
+	display: inline-block; 
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* -- TYPOGRAPHY -- */ 
+
+html{
+	font-size: 1.3rem;
+}
+
+h1,h4{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.6rem;
+}
+
+h2{
+	padding-top: .7em;
+	padding-bottom: .7em;
+	color:#0eb493;
+	border-bottom: .010em solid #B8B8B8;
+	border-bottom-color: #ACACAC;
+}
+h3{
+	font-weight: 400;
+}
+p{
+	font-size: .7rem;
+	line-height: 1.6em;
+}
+
+body > section > div > p{
+	font-size: .9rem;
+}
+
+span{
+	color:#0fdf97;
+}
+
+b{
+	font-weight: 700;
+}
+
+footer{
+	color: #FFF;
+}
+
+
+@media only screen and (min-width: 500px) {
+
+	
+}
+
+
+@media only screen and (min-width: 768px) {
+	
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	
+}
+/*--------------------------------------------------------------
+5.0 - OBJECTS 
+-------------------------------------------------------------- */
+
+/* -- FRAMEWORK -- */ 
+h1, h1 + p{
+	display: inline-block;
+}
+
+body > section {
+	padding-bottom: 4em;
+}
+
+#bg-light-gray div {
+	padding-bottom: 1.5em;
+}
+
+footer div{
+	padding-bottom: 2em;
+}
+
+#bg-green div p:first-child {
+	font-size: 1.6rem;
+}
+
+#bg-green div p:nth-child(2) {
+	font-size: 1.4rem;
+}
+
+#bg-green div p:last-child {
+	font-size: .7rem;
+}
+
+#bg-green div p{
+	line-height: .5em;
+}
+
+#bg-green div{
+	padding: 4em 0 2em 0;
+}
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS 
+-------------------------------------------------------------- */
+/* -- HEADER -- */ 
+
+body > header{
+	color: #FFF;
+}
+
+/* -- NAVIGATION -- */ 
+nav li{
+	padding: .4em;
+}
+
+nav ul{
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES
+-------------------------------------------------------------- */
+.float-none{
+	margin: 0 auto;
+	float: none;
+}
+
+
+/* -- ALIGNMENT -- */
+
+.txt-center{
+	text-align: center;
+}
+
+/* -- COLOR -- */
+#bg-dark-green{
+	background-color:#10443f;
+	padding: 10px 0;
+}
+
+#bg-green{
+	background-color:#104f41;
+	padding: 10px 0;
+	font-weight: 200;
+}
+
+#bg-light-gray{
+	background-color: #f4f7f9;
+	padding: 10px 0;
+}
+
+#bg-teal{
+	background-color: #34b098;
+	padding: 10px 0;
+}
+
+#bg-light-gray p{
+	color: #858585;
+}
