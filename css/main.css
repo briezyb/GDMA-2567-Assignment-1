@@ -51,19 +51,14 @@
 -------------------------------------------------------------- */
 /* -- LISTS -- */ 
 
-nav li{
-	display: inline-block; 
-}
 
-a {
-	text-decoration: none;
-	color: #fff;
-}
+
+
 
 /* -- TYPOGRAPHY -- */ 
 
 html{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 }
 
 h1,h4{
@@ -79,15 +74,16 @@ h2{
 	border-bottom-color: #ACACAC;
 }
 h3{
-	font-weight: 400;
+	font-weight: 600;
 }
+
 p{
-	font-size: .7rem;
 	line-height: 1.6em;
 }
 
-body > section > div > p{
-	font-size: .9rem;
+a {
+	text-decoration: none;
+	color: #fff;
 }
 
 span{
@@ -99,24 +95,39 @@ b{
 }
 
 footer{
+	background-color: #34b098;
+	border-top: .2em solid #000;
 	color: #FFF;
 }
 
-
-@media only screen and (min-width: 500px) {
-
-	
-}
-
-
 @media only screen and (min-width: 768px) {
-	
+	html{
+		font-size: 1rem;
+	}
 	
 }
 
 @media only screen and (min-width: 1024px) {
 	
+	html{
+		font-size: .9rem;
+	}
 	
+	h2{
+		font-size: 2rem;
+	}
+	
+	nav{
+		text-align: right;
+	}
+	
+	#bg-light-gray section{
+		padding-right: 4.8em;
+	}
+	
+	#bg-light-gray section:last-child{
+		padding-right: 0;
+	}
 }
 /*--------------------------------------------------------------
 5.0 - OBJECTS 
@@ -128,68 +139,148 @@ h1, h1 + p{
 }
 
 body > section {
-	padding-bottom: 4em;
-}
-
-#bg-light-gray div {
-	padding-bottom: 1.5em;
+	padding-bottom: 6em;
+	padding-top: 3em;
 }
 
 footer div{
 	padding-bottom: 2em;
 }
-
-#bg-green div p:first-child {
-	font-size: 1.6rem;
-}
-
-#bg-green div p:nth-child(2) {
-	font-size: 1.4rem;
-}
-
-#bg-green div p:last-child {
-	font-size: .7rem;
-}
-
-#bg-green div p{
-	line-height: .5em;
-}
-
-#bg-green div{
-	padding: 4em 0 2em 0;
-}
-
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
 -------------------------------------------------------------- */
+#bg-light-gray div {
+	padding-bottom: 1.5em;
+}
+
+#bg-dark-green > div > div{
+	margin: 0;
+}
+
+#bg-dark-green > div > nav{
+	margin: .2em 0;
+	padding: 0;
+}
+
+#bg-teal{
+	
+	padding: 10px 0;
+}
+
+body > section > div > div > p {
+	font-weight: 600;
+}
+
+#bg-light-gray section {
+	text-align: center;
+}
+
 /* -- HEADER -- */ 
 
 body > header{
 	color: #FFF;
 }
 
+#bg-green div p:first-child {
+	font-size: 2.5rem;
+}
+
+#bg-green div p:nth-child(2) {
+	font-size: 1.7rem;
+}
+
+#bg-green div p:last-child {
+	font-size: .9rem;
+}
+
+#bg-green div p{
+	line-height: .3em;
+}
+
+#bg-green div{
+	padding: 6em 0 4em 0;
+}
+
+@media only screen and (min-width: 768px) {
+	#bg-green div p{
+	line-height: .3em;
+}
+	
+	#bg-green div p:first-child {
+	font-size: 2.5rem;
+	}
+	
+	#bg-green div p:nth-child(2) {
+	font-size: 1.8rem;
+	}
+	
+	#bg-green div p:last-child {
+	font-size: .8rem;
+}
+	
+	#bg-green div{
+	padding: 10em 0 6em 0;
+}
+
+	#bg-light-gray section {
+	text-align: left;
+}
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	#bg-green div p{
+	line-height: .3em;
+}
+	
+	#bg-green div p:first-child {
+	font-size: 3rem;
+	}
+	
+	#bg-green div p:nth-child(2) {
+	font-size: 2.3rem;
+	}
+	
+	#bg-green div p:last-child {
+	font-size: 1rem;
+}
+	
+	#bg-green div{
+	padding: 15em 0 8em 0;
+}
+}
+
 /* -- NAVIGATION -- */ 
 nav li{
 	padding: .4em;
+	display: inline-block;
+	font-size: .7rem;
+	margin-left: .9em;	
 }
 
 nav ul{
 	padding: 0;
+	text-align: center;
+}
+
+ @media only screen and (min-width: 1024px) {
+	 nav ul{
+	text-align: right;
+}
 }
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
-.float-none{
-	margin: 0 auto;
-	float: none;
-}
-
-
 /* -- ALIGNMENT -- */
 
 .txt-center{
 	text-align: center;
+}
+
+.float-none{
+	margin: 0 auto;
+	float: none;
 }
 
 /* -- COLOR -- */
@@ -209,10 +300,7 @@ nav ul{
 	padding: 10px 0;
 }
 
-#bg-teal{
-	background-color: #34b098;
-	padding: 10px 0;
-}
+
 
 #bg-light-gray p{
 	color: #858585;
